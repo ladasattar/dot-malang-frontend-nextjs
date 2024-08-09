@@ -6,7 +6,7 @@ export const Pokemon: React.FC<IPokemonWrapper> = (props) => {
   const { ...pokemon } = props;
 
   return (
-    <section className="col-span-2 2xl:col-span-2 py-4 rounded-lg cursor-pointer flex flex-col items-center justify-center bg-white transition-all duration-300 hover:border-brand hover:shadow-md hover:scale-105 border-white border-2">
+    <section className="col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-3 2xl:col-span-2 py-4 rounded-lg cursor-pointer flex flex-col items-center justify-center bg-white transition-all duration-300 hover:border-brand hover:shadow-md hover:scale-105 border-white border-2">
       <Image
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
         alt={pokemon.name}
