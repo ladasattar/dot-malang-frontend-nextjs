@@ -26,6 +26,10 @@
     rgb(var(--background-start-rgb));
 } */
 
+body {
+  color: #222222;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
