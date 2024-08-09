@@ -14,7 +14,7 @@ export default function Shipping() {
   return (
     <main>
       <section className="container mx-auto py-2.5">
-        <section>
+        <section className="px-6 md:px-0">
           <Input
             id="Search Pokemon"
             onChange={(value) => searchPokemon(value)}

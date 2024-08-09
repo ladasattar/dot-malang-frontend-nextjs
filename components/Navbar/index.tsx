@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Navbar = () => {
   return (
-    <nav className="w-full bg-white h-[72px] flex items-center justify-center shadow-sm border-b-2 border-b-brand">
+    <nav className="w-full bg-white h-[72px] flex items-center justify-center shadow-sm border-b-2 border-b-brand max-2xl:px-6">
       <section className="container">
         <ul className="flex justify-between">
           <li>
