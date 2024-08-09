@@ -18,17 +18,12 @@ const INITIAL_STATE = {
 export default function LoginForm() {
   const [formState] = useFormState(loginUserAction, INITIAL_STATE);
 
-  React.useEffect(() => {
-    if (formState) {
-      if (formState?.message) toast.error(formState?.message);
-    }
-  }, [formState]);
-
   return (
     <form
       action={async (formData) => {
         const res = await loginUserAction(formState, formData);
         if (res?.success) redirect("/pokemon/explore");
+        else toast.error(res?.message);
       }}
     >
       <Input
