@@ -1,22 +1,29 @@
-import { FiBox } from "react-icons/fi";
+import Image from "next/image";
 
-export default function Navbar() {
+export const Navbar = () => {
   return (
-    <nav className="w-full bg-brand h-[72px] flex items-center justify-center">
+    <nav className="w-full bg-white h-[72px] flex items-center justify-center shadow-sm border-b-2 border-b-brand">
       <section className="container">
         <ul className="flex justify-between">
           <li>
             <a
-              className="text-white text-opacity-95 font-bold italic flex items-center gap-2.5"
+              className="text-opacity-95 font-bold italic flex items-center gap-2.5"
               href="/"
             >
-              <FiBox className="text-2xl" />
-              <p>DOT Shipping</p>
+              <Image
+                priority
+                src="/pokeball.png"
+                alt="Pokewiki Logo"
+                width={30}
+                height="0"
+                className="w-auto h-6"
+              />
+              <p>Pokewiki by DOT</p>
             </a>
           </li>
           <li>
             <a
-              className="italic font-[500] text-white text-opacity-75"
+              className="italic font-[500] text-gray-700 text-sm text-opacity-75"
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/ladasattar/dot-malang-frontend-nextjs/"
@@ -28,4 +35,4 @@ export default function Navbar() {
       </section>
     </nav>
   );
-}
+};
