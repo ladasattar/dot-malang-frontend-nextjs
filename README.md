@@ -14,6 +14,8 @@ This project is using Public API from [PokéAPI](https://pokeapi.co/)
 ```
 NEXT_PUBLIC_POKE_API_ENDPOINT="https://pokeapi.co/api/v2"
 ```
+### Note:
+In this case, the .env file was provided by me because nothing confidential inside it
 
 ## Using Bun
 ```
